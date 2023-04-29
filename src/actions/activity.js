@@ -1,5 +1,4 @@
 import fetchData from "./utils/fetchData";
-
 import { convertDateToLabel } from "./utils/dateMethods";
 
 // * Activity/record-related request controller functions

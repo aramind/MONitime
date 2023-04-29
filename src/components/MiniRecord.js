@@ -1,27 +1,11 @@
-import {
-  Autocomplete,
-  Box,
-  Button,
-  LinearProgress,
-  Stack,
-  TextField,
-  Toolbar,
-  Typography,
-} from "@mui/material";
-import React, { useEffect, useState } from "react";
-import SideBar from "../components/sidebar/SideBar";
+import { Box, Button, LinearProgress, Stack, Typography } from "@mui/material";
+import React, { useEffect } from "react";
 import muiTheme from "../muiTheme";
-// import DatePickerComponent from "../components/DatePickerComponent";
-// import { format } from "date-fns-tz";
-// import Dropdown from "../components/form-record/Dropdown";
-import { DeleteOutlineOutlined, RestartAltOutlined } from "@mui/icons-material";
+
 import { DatePicker } from "@mui/x-date-pickers";
 import { format } from "date-fns-tz";
 import { useValue } from "../context/ContextProvider";
-import {
-  getRecordForSelectedDate,
-  updateActivityRecord,
-} from "../actions/activity";
+import { getRecordForSelectedDate } from "../actions/activity";
 import SummaryTable from "../components/summary-table/SummaryTable";
 import ChartDisplay from "../components/charts/ChartDisplay";
 import getTotalTimeInSeconds from "../util-functions/getTotalTimeInSeconds";
@@ -31,16 +15,12 @@ const MiniRecord = () => {
   // * Global states from Context provider
   // date selected
   const {
-    state: { selectedDate, activityNames, currentUser, recordForSelectedDate },
+    state: { selectedDate, currentUser, recordForSelectedDate },
     dispatch,
   } = useValue();
   const formattedDate = format(selectedDate, "E MMM d, yyyy");
 
   // * Local states
-  const [selectedActivity, setSelectedActivity] = useState(null);
-  // hrs and minutes
-  const [hrs, setHrs] = useState(null);
-  const [mins, setMins] = useState(null);
   const navigate = useNavigate();
   useEffect(() => {
     // console.log(selectedDate);
@@ -52,7 +32,7 @@ const MiniRecord = () => {
       const token = currentUser.token;
       getRecordForSelectedDate(token, content, dispatch);
     }
-  }, []);
+  }, [currentUser, dispatch, selectedDate]);
 
   useEffect(() => {
     async function retrieve() {
@@ -67,13 +47,6 @@ const MiniRecord = () => {
     }
     retrieve();
   }, [selectedDate, currentUser, dispatch]);
-  const genArrOfDigits = (n) => {
-    const arr = [];
-    for (let i = 1; i <= n; i++) {
-      arr.push(i.toString());
-    }
-    return arr;
-  };
 
   // const hrsArray = genArrOfDigits(24);
   // const minsArray = genArrOfDigits(60);
