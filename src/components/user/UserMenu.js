@@ -1,5 +1,5 @@
 import { AccountCircle, Logout, Settings } from "@mui/icons-material";
-import { ListItemIcon, Menu, MenuItem, Switch } from "@mui/material";
+import { ListItemIcon, Menu, MenuItem } from "@mui/material";
 import React from "react";
 import { useValue } from "../../context/ContextProvider";
 import useCheckToken from "../../hooks/useCheckToken";

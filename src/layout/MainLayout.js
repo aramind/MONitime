@@ -9,7 +9,6 @@ import { useValue } from "../context/ContextProvider";
 import NotYetModal from "../components/modals/NotYetModal";
 import ClosingModal from "../components/modals/ClosingModal";
 import UserSettingsModal from "../components/modals/UserSettingsModal";
-import { Box, Typography } from "@mui/material";
 
 const MainLayout = () => {
   const {
