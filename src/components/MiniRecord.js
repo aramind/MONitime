@@ -90,7 +90,7 @@ const MiniRecord = () => {
         margin: "20px auto",
         // border: "1px solid green",
         [muiTheme.breakpoints.up("md")]: {
-          width: { md: "95%", lg: "90%", xl: "50%" },
+          width: { md: "95%", lg: "90%", xl: "80%" },
           // display: { md: "flex" },
         },
       }}
@@ -148,7 +148,8 @@ const MiniRecord = () => {
           {/* date picker */}
           {/* TODO:(minor) make the date picker occupy the whole width of the parent */}
           <Box
-            width={"100%"}
+            // width={"100%"}
+            minWidth="300px"
             sx={{
               display: "flex",
               alignItems: "center",
