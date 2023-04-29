@@ -1,6 +1,5 @@
-import { utcToZonedTime } from "date-fns-tz";
 import fetchData from "./utils/fetchData";
-import { format } from "date-fns";
+
 import { convertDateToLabel } from "./utils/dateMethods";
 
 // * Activity/record-related request controller functions

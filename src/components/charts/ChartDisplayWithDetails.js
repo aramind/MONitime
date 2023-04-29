@@ -1,22 +1,13 @@
-import React, { useContext, useEffect, useState } from "react";
-// import "./ChartsPage.css";
-// import "./ChartsPage.css";
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
-import Chart from "chart.js/auto";
-import { Doughnut } from "react-chartjs-2";
-import { v4 as uuidv4 } from "uuid";
+import React, { useEffect, useState } from "react";
 import { useValue } from "../../context/ContextProvider";
-import PieChart from "./PieChart";
 import { getRecordForSelectedDate } from "../../actions/activity";
 import { Box, Button, LinearProgress, Typography } from "@mui/material";
 import { DatePicker } from "@mui/x-date-pickers";
 import muiTheme from "../../muiTheme";
-import { format } from "date-fns-tz";
 import ChartDisplay from "./ChartDisplay";
 import getTotalTimeInSeconds from "../../util-functions/getTotalTimeInSeconds";
-import { useNavigate } from "react-router-dom";
-import { CancelOutlined, Close } from "@mui/icons-material";
-import AddRecordModal from "./ModalWrapper";
+import { CancelOutlined } from "@mui/icons-material";
+
 import ModalWrapper from "./ModalWrapper";
 
 const ChartDisplayWithDetails = ({ onClose, showSummary }) => {
@@ -28,10 +19,8 @@ const ChartDisplayWithDetails = ({ onClose, showSummary }) => {
 
   // * Local states
   const [dateForChart, setDateForChart] = useState(new Date());
-  const formattedDate = format(dateForChart, "E MMM d, yyyy");
   const [chartRecord, setChartRecord] = useState();
 
-  const navigate = useNavigate();
   useEffect(() => {
     async function retrieve() {
       let content = {
@@ -45,7 +34,7 @@ const ChartDisplayWithDetails = ({ onClose, showSummary }) => {
       }
     }
     retrieve();
-  }, []);
+  }, [currentUser, dateForChart, dispatch]);
 
   useEffect(() => {
     async function retrieve() {
