@@ -5,16 +5,11 @@ import {
   LinearProgress,
   Stack,
   TextField,
-  Toolbar,
   Typography,
 } from "@mui/material";
 import React, { useEffect, useState } from "react";
-// import DatePickerComponent from "../components/DatePickerComponent";
-// import { format } from "date-fns-tz";
-// import Dropdown from "../components/form-record/Dropdown";
 import { DeleteOutlineOutlined, RestartAltOutlined } from "@mui/icons-material";
 import { DatePicker } from "@mui/x-date-pickers";
-import { format } from "date-fns-tz";
 import { useValue } from "../../context/ContextProvider";
 import {
   getRecordForSelectedDate,
@@ -60,7 +55,7 @@ const UpdateRecordModal = ({ date }) => {
       const token = currentUser.token;
       getRecordForSelectedDate(token, content, dispatch);
     }
-  }, [refresh]);
+  }, [currentUser, date, dispatch, refresh, selectedDate]);
 
   useEffect(() => {
     async function retrieve() {

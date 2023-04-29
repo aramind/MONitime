@@ -1,9 +1,8 @@
 import { Box, Grid, Typography } from "@mui/material";
-import React, { useEffect } from "react";
+import React from "react";
 import { useValue } from "../../context/ContextProvider";
 import SummaryTableRow from "./SummaryTableRow";
 import getActivityPercentage from "./utils/getActivityPercentage";
-import { getRecordForSelectedDate } from "../../actions/activity";
 import styled from "@emotion/styled";
 import { format } from "date-fns-tz";
 import muiTheme from "../../muiTheme";

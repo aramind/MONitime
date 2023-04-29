@@ -11,9 +11,6 @@ import {
 import React, { useEffect, useState } from "react";
 import SideBar from "../components/sidebar/SideBar";
 import muiTheme from "../muiTheme";
-// import DatePickerComponent from "../components/DatePickerComponent";
-// import { format } from "date-fns-tz";
-// import Dropdown from "../components/form-record/Dropdown";
 import { DeleteOutlineOutlined, RestartAltOutlined } from "@mui/icons-material";
 import { DatePicker } from "@mui/x-date-pickers";
 import { format } from "date-fns-tz";
@@ -24,7 +21,6 @@ import {
   resetRecordForSelectedDate,
   updateActivityRecord,
 } from "../actions/activity";
-import SummaryPage from "./SummaryPage";
 import SummaryTable from "../components/summary-table/SummaryTable";
 import ChartDisplay from "../components/charts/ChartDisplay";
 import getTotalTimeInSeconds from "../util-functions/getTotalTimeInSeconds";
@@ -61,7 +57,7 @@ const RecordPage = () => {
       const token = currentUser.token;
       getRecordForSelectedDate(token, content, dispatch);
     }
-  }, [refresh]);
+  }, [currentUser, dispatch, refresh, selectedDate]);
 
   useEffect(() => {
     async function retrieve() {

@@ -1,20 +1,7 @@
-import {
-  Avatar,
-  Box,
-  Button,
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogContentText,
-  DialogTitle,
-  IconButton,
-  TextField,
-} from "@mui/material";
-import React, { useRef } from "react";
+import { Box, Dialog, DialogTitle, IconButton } from "@mui/material";
+import React from "react";
 import { useValue } from "../../context/ContextProvider";
-import { Close, Send } from "@mui/icons-material";
-import { updateProfile } from "../../actions/user";
-import RecordPage from "../../pages/RecordPage";
+import { Close } from "@mui/icons-material";
 import UpdateRecordModal from "../modals/UpdateRecordModal";
 
 const ModalWrapper = ({ date }) => {

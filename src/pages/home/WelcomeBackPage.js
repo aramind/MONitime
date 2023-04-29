@@ -1,11 +1,8 @@
 import { Box, Stack, Toolbar, Typography, styled } from "@mui/material";
 import { useValue } from "../../context/ContextProvider";
-import muiTheme from "../../muiTheme";
+
 import SideBar from "../../components/sidebar/SideBar";
-import { DatePicker } from "@mui/x-date-pickers";
-import { format } from "date-fns-tz";
-import SummaryTable from "../../components/summary-table/SummaryTable";
-import ChartDisplay from "../../components/charts/ChartDisplay";
+
 import MiniRecord from "../../components/MiniRecord";
 // import WavingHandOutlinedIcon from "@mui/icons-material/WavingHandOutlined";
 // hero images

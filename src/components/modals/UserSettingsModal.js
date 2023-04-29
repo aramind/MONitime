@@ -1,16 +1,11 @@
 import React, { useState } from "react";
 import { useValue } from "../../context/ContextProvider";
 import {
-  Box,
   Button,
   Dialog,
   DialogContent,
-  DialogContentText,
   DialogTitle,
-  Divider,
   IconButton,
-  Link,
-  Typography,
 } from "@mui/material";
 import { Close } from "@mui/icons-material";
 import ConfirmDeactivateDialog from "../confirmDialogs/ConfirmDeactivateDialog";

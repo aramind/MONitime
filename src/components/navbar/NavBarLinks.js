@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import {
   Avatar,
   IconButton,
-  ListItemIcon,
-  MenuItem,
   Stack,
   Switch,
   Tooltip,
@@ -12,14 +10,12 @@ import {
 import { useValue } from "../../context/ContextProvider";
 import NavBarLink from "./NavBarLink";
 import UserMenu from "../user/UserMenu";
-import { Brightness4, DarkModeSharp } from "@mui/icons-material";
 
 const linkNames = [
   { name: "Home", to: "/" },
   { name: "Record", to: "/record" },
   { name: "Charts", to: "/charts" },
   { name: "Summary", to: "/summary   " },
-  // { name: "Read", to: "/read        " },
 ];
 const NavBarLinks = () => {
   const {
@@ -28,7 +24,6 @@ const NavBarLinks = () => {
   } = useValue();
 
   // local states
-  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const [anchorUserMenu, setAnchorUserMenu] = useState(null);
   return (

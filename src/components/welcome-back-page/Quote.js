@@ -24,7 +24,7 @@ const Quote = () => {
     } catch (error) {
       console.log(error);
     }
-  }, []);
+  }, [currentUser.token, dispatch]);
   return (
     <>
       <Typography

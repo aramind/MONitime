@@ -13,10 +13,7 @@ import { useValue } from "../context/ContextProvider";
 import { useNavigate } from "react-router-dom";
 
 const Deactivated = () => {
-  const {
-    state: {},
-    dispatch,
-  } = useValue();
+  const { dispatch } = useValue();
 
   let navigate = useNavigate();
   // handlers

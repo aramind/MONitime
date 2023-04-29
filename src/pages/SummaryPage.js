@@ -35,7 +35,7 @@ const SummaryPage = () => {
           console.error(error);
         });
     }
-  }, [interval, currentUser]);
+  }, [interval, currentUser, selectedDate, dispatch]);
 
   console.log("RESULT", result);
 

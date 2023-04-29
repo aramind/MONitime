@@ -1,5 +1,5 @@
 import { Box, Card, CardContent, Typography, alpha } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 import SummaryCardContent from "./SummaryCardContent";
 
 const randomBGcolors = [
