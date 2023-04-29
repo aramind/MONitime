@@ -1,5 +1,7 @@
 import { Pie } from "react-chartjs-2";
 import React, { useState, useEffect } from "react";
+import { Chart, ArcElement } from "chart.js";
+Chart.register(ArcElement);
 
 const PieChart = ({ todaysRecord }) => {
   const [data, setData] = useState({
