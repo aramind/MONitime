@@ -11,10 +11,7 @@
   <p align="center">
     A time tracking web app to help you track your time and optimize your life.
     <br />
-    <a href="#"><strong>Explore the repo</strong></a>
-    <br />
-    <br />
-    <a href="#">View Demo</a>
+    <a href="https://monitime.onrender.com/record">View Demo</a>
   </p>
 </div>
 
