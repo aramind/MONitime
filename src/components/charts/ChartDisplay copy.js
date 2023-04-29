@@ -1,17 +1,10 @@
-import React, { useContext, useEffect, useState } from "react";
-// import "./ChartsPage.css";
-// import "./ChartsPage.css";
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
-import Chart from "chart.js/auto";
-import { Doughnut } from "react-chartjs-2";
-import { v4 as uuidv4 } from "uuid";
+import React from "react";
 import { useValue } from "../../context/ContextProvider";
 import PieChart from "./PieChart";
 
-const ChartDisplay = ({ onClose, showSummary }) => {
+const ChartDisplay = ({ showSummary }) => {
   const {
-    state: { recordForSelectedDate, selectedDate },
-    dispatch,
+    state: { recordForSelectedDate },
   } = useValue();
 
   const transformedObject = {
