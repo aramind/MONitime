@@ -5,7 +5,7 @@ import muiTheme from "../../muiTheme";
 const NavBarLink = ({ name, to }) => {
   return (
     <Link
-      to={to}
+      // to={to}
       color="inherit"
       underline="none"
       href={to}

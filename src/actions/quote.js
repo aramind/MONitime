@@ -1,6 +1,7 @@
 import fetchData from "./utils/fetchData";
 
-const url = process.env.REACT_APP_SERVER_URL + "/quote";
+// const url = process.env.REACT_APP_SERVER_URL + "/quote";
+const url = "https://monitime-api.onrender.com/quote";
 
 export const getRandomQuote = async (token, content, dispatch) => {
   dispatch({ type: "START_LOADING" });
