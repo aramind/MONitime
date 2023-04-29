@@ -1,0 +1,11 @@
+body {
+  /* background-color: lightgray; */
+  min-height: 100vh;
+
+  /* background-image: linear-gradient(180deg, #15664f, #1c4c5e); */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

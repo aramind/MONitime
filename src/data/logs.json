@@ -1,0 +1,300 @@
+{
+  "logs": [
+    {
+      "date": "2023-04-08",
+      "activities": [
+        {
+          "name": "SLEEP",
+          "hours": 6
+        },
+        {
+          "name": "WORK",
+          "hours": 7
+        },
+        {
+          "name": "LEARN",
+          "hours": 4
+        },
+        {
+          "name": "SELF",
+          "hours": 1
+        },
+        {
+          "name": "SOCIAL",
+          "hours": 2
+        },
+        {
+          "name": "PLAY",
+          "hours": 1
+        },
+        {
+          "name": "FITNESS",
+          "hours": 1
+        },
+        {
+          "name": "OTHERS",
+          "hours": 2
+        }
+      ]
+    },
+    {
+      "date": "2023-04-09",
+      "activities": [
+        {
+          "name": "SLEEP",
+          "hours": 8
+        },
+        {
+          "name": "WORK",
+          "hours": 7
+        },
+        {
+          "name": "LEARN",
+          "hours": 2
+        },
+        {
+          "name": "SELF",
+          "hours": 1
+        },
+        {
+          "name": "SOCIAL",
+          "hours": 2
+        },
+        {
+          "name": "PLAY",
+          "hours": 1
+        },
+        {
+          "name": "FITNESS",
+          "hours": 1
+        },
+        {
+          "name": "OTHERS",
+          "hours": 2
+        }
+      ]
+    },
+    {
+      "date": "2023-04-10",
+      "activities": [
+        {
+          "name": "SLEEP",
+          "hours": 8
+        },
+        {
+          "name": "WORK",
+          "hours": 6
+        },
+        {
+          "name": "LEARN",
+          "hours": 2
+        },
+        {
+          "name": "SELF",
+          "hours": 3
+        },
+        {
+          "name": "SOCIAL",
+          "hours": 2
+        },
+        {
+          "name": "PLAY",
+          "hours": 1
+        },
+        {
+          "name": "FITNESS",
+          "hours": 1
+        },
+        {
+          "name": "OTHERS",
+          "hours": 1
+        }
+      ]
+    },
+    {
+      "date": "2023-04-11",
+      "activities": [
+        {
+          "name": "SLEEP",
+          "hours": 8
+        },
+        {
+          "name": "WORK",
+          "hours": 5
+        },
+        {
+          "name": "LEARN",
+          "hours": 3
+        },
+        {
+          "name": "SELF",
+          "hours": 2
+        },
+        {
+          "name": "SOCIAL",
+          "hours": 2
+        },
+        {
+          "name": "PLAY",
+          "hours": 2
+        },
+        {
+          "name": "FITNESS",
+          "hours": 1
+        },
+        {
+          "name": "OTHERS",
+          "hours": 1
+        }
+      ]
+    },
+    {
+      "date": "2023-04-12",
+      "activities": [
+        {
+          "name": "SLEEP",
+          "hours": 7
+        },
+        {
+          "name": "WORK",
+          "hours": 7
+        },
+        {
+          "name": "LEARN",
+          "hours": 2
+        },
+        {
+          "name": "SELF",
+          "hours": 1
+        },
+        {
+          "name": "SOCIAL",
+          "hours": 3
+        },
+        {
+          "name": "PLAY",
+          "hours": 1
+        },
+        {
+          "name": "FITNESS",
+          "hours": 1
+        },
+        {
+          "name": "OTHERS",
+          "hours": 2
+        }
+      ]
+    },
+    {
+      "date": "2023-04-13",
+      "activities": [
+        {
+          "name": "sleep",
+          "hours": 8
+        },
+        {
+          "name": "work",
+          "hours": 6
+        },
+        {
+          "name": "learn",
+          "hours": 2
+        },
+        {
+          "name": "self",
+          "hours": 2
+        },
+        {
+          "name": "social",
+          "hours": 3
+        },
+        {
+          "name": "play",
+          "hours": 2
+        },
+        {
+          "name": "fitness",
+          "hours": 1
+        },
+        {
+          "name": "others",
+          "hours": 0
+        }
+      ]
+    },
+    {
+      "date": "2023-04-14",
+      "activities": [
+        {
+          "name": "SLEEP",
+          "hours": 8
+        },
+        {
+          "name": "WORK",
+          "hours": 7
+        },
+        {
+          "name": "LEARN",
+          "hours": 2
+        },
+        {
+          "name": "SELF",
+          "hours": 1
+        },
+        {
+          "name": "SOCIAL",
+          "hours": 3
+        },
+        {
+          "name": "PLAY",
+          "hours": 2
+        },
+        {
+          "name": "FITNESS",
+          "hours": 1
+        },
+        {
+          "name": "OTHERS",
+          "hours": 0
+        }
+      ]
+    },
+    {
+      "date": "2023-04-15",
+      "activities": [
+        {
+          "name": "SLEEP",
+          "hours": 6
+        },
+        {
+          "name": "WORK",
+          "hours": 8
+        },
+        {
+          "name": "LEARN",
+          "hours": 3
+        },
+        {
+          "name": "SELF",
+          "hours": 1
+        },
+        {
+          "name": "SOCIAL",
+          "hours": 3
+        },
+        {
+          "name": "PLAY",
+          "hours": 2
+        },
+        {
+          "name": "FITNESS",
+          "hours": 1
+        },
+        {
+          "name": "OTHERS",
+          "hours": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.link-cursor-hover {
+  cursor: pointer;
+}
+
+.flex-left {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
