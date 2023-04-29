@@ -1,0 +1,12 @@
+.navbarlink {
+  text-decoration: none;
+  color: #eee;
+  font-size: 22px;
+  padding-inline: 1rem;
+  font-family: "Prompt";
+}
+
+.navbarlink:hover {
+  /* text-decoration: underline; */
+  color: #00e1ff;
+}

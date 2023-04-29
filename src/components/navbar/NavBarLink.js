@@ -1,23 +1,24 @@
-// import { Link } from "@mui/material";
 import React from "react";
-import muiTheme from "../../muiTheme";
+import "./navbar.css";
 import { NavLink } from "react-router-dom";
 
 const NavBarLink = ({ name, to }) => {
   return (
     <NavLink
+      className="navbarlink"
       to={to}
       color="inherit"
       underline="none"
-      // href={to}
       fontSize="20px"
       px={1}
-      sx={{
-        "&:hover": {
-          color: muiTheme.palette.hovercolor.text, //TODO: finalize the color
-          textDecoration: "underline",
-        },
-      }}
+      // sx={{
+      //   textDecoration: "none",
+      //   color: "#eee",
+      //   "&:hover": {
+      //     color: muiTheme.palette.hovercolor.text, //TODO: finalize the color
+      //     textDecoration: "underline",
+      //   },
+      // }}
     >
       {name}
     </NavLink>
