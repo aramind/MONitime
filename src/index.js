@@ -10,6 +10,10 @@ import muiTheme from "./muiTheme";
 import { LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 
+import { disableReactDevTools } from "@fvilers/disable-react-devtools";
+
+if (process.env.NODE_ENV === "production") disableReactDevTools();
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(

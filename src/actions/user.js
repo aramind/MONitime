@@ -2,7 +2,8 @@ import uploadFile from "../firebase/uploadFile";
 import fetchData from "./utils/fetchData";
 import { v4 as uuidv4 } from "uuid";
 
-const url = process.env.REACT_APP_SERVER_URL;
+// const url = process.env.REACT_APP_SERVER_URL;
+const url = "https://monitime-api.onrender.com";
 
 export const register = async (user, dispatch) => {
   dispatch({ type: "START_LOADING" });

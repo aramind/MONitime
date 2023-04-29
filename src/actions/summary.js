@@ -2,7 +2,8 @@ import fetchData from "./utils/fetchData";
 import { convertDateToLabel } from "./utils/dateMethods";
 
 // * url
-const url = process.env.REACT_APP_SERVER_URL + "/summary";
+// const url = process.env.REACT_APP_SERVER_URL + "/summary";
+const url = "https://monitime-api.onrender.com/summary";
 
 export const getSummaryForInterval = async (
   token,

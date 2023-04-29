@@ -9,7 +9,8 @@ import { convertDateToLabel } from "./utils/dateMethods";
 // * related to activity/records that needs to send
 // * an http request and response to the back end via the fetchData
 
-const url = process.env.REACT_APP_SERVER_URL + "/record";
+// const url = process.env.REACT_APP_SERVER_URL + "/record";
+const url = "https://monitime-api.onrender.com/record";
 
 // (1) updateActivityRecord
 //    - prepares the POST record requests to be send to the server
