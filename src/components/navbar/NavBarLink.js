@@ -1,14 +1,15 @@
-import { Link } from "@mui/material";
+// import { Link } from "@mui/material";
 import React from "react";
 import muiTheme from "../../muiTheme";
+import { NavLink } from "react-router-dom";
 
 const NavBarLink = ({ name, to }) => {
   return (
-    <Link
-      // to={to}
+    <NavLink
+      to={to}
       color="inherit"
       underline="none"
-      href={to}
+      // href={to}
       fontSize="20px"
       px={1}
       sx={{
@@ -19,7 +20,7 @@ const NavBarLink = ({ name, to }) => {
       }}
     >
       {name}
-    </Link>
+    </NavLink>
   );
 };
 
